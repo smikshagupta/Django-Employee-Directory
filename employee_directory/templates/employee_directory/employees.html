@@ -1,0 +1,15 @@
+
+<div class="row">
+    {% for emp in employees %}
+    <div class="col-md">
+        <div class="card">
+            <div class="card-body">
+                <img class="img-thumbnail float-start" src="images/{{emp.profile_pic}}">
+                <h5>{{emp}}</h5>
+                <span>{{emp.designation}}</span><br>
+                <span>{{emp.department}}</span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
